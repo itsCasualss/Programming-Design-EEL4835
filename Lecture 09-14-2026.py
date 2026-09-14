@@ -12,3 +12,18 @@ for location, coords in wh40k_locations:
     #the 'f' [called: f-string] is important after the print function so it recalls the
     #variables from the Tuple, and must be recaled with the {} brackets.
 
+
+
+#Important for calling tuple's information 
+def your_info(name,age):
+    print("Your name is",name)
+    print('Your age is',age)
+    
+your_info('James', 25)
+your_info(25, 'James')
+
+print('=================')
+your_info(name='James', age=25)
+your_info(age=25, name="james")
+
+#in the above, when using the your_info defined function, you must create the referenced arguments - then you can the information without worry.
