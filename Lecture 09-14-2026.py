@@ -27,3 +27,14 @@ your_info(name='James', age=25)
 your_info(age=25, name="james")
 
 #in the above, when using the your_info defined function, you must create the referenced arguments - then you can the information without worry.
+
+#the end = ' ' will end the print function with the entered value,
+#while sep = ' ' will place the value in between the printed values. 
+for i in range(1,6):
+    print(i, end="")
+    
+print(1,2,3,4,sep = "_")
+
+print(1,2,3,4, sep = " ", end = "^^")
+
+#
