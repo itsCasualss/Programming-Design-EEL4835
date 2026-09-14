@@ -37,4 +37,19 @@ print(1,2,3,4,sep = "_")
 
 print(1,2,3,4, sep = " ", end = "^^")
 
+def your_info(name, age = 25):
+    
+#Second argument will have the default value of 0.
+#If the user use a value for the second argument, the user value will replace 0.
+    print("Your name is", name)
+    print("Your age is", age)
+    
+your_info("Steve")
+print("=================")
+your_info("Joe", 40)
+
+#You need to default the value in the last entry of the UDF, or else #Error
+
+
+
 #
