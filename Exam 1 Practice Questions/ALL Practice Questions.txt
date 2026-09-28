@@ -1,0 +1,98 @@
+Minion Greeting Machine
+Ask the user for their name. Create a function greet(name) that prints:
+Welcome, <name>! The Minions have been expecting you.
+Godzilla Temperature Warning
+Ask for a temperature in Celsius. Create a function that converts it to Fahrenheit and returns the result. If the Fahrenheit temperature is greater than 100, also print "Godzilla weather!"
+Pizza Calculator
+Ask how many pizzas were ordered and how many slices each pizza contains. Print the total number of slices. Then ask how many people are attending and print how many whole slices each person can receive.
+Who Is Taller?
+Ask for the heights of Godzilla and King Kong. Print which one is taller, or "Same height!" if they are equal.
+Secret Agent Name
+Ask the user for a first and last name. Create and print a secret-agent name consisting of the last name followed by the first name:
+Bond, James
+Four-Function Robot
+Create four UDFs named add(), subtract(), multiply(), and divide(). Ask the user for two numbers in main() and display the results returned by all four functions. This builds directly on the five-UDF exercise in the slides.
+Lucky Number
+Ask the user for an integer. If it is divisible by 7, print "Lucky!"; otherwise print "Try again!"
+Odd, Even, or Zero?
+Ask for an integer. Print "Zero" if it is zero. Otherwise print whether it is positive or negative and whether it is odd or even.
+The Suspicious Password
+Ask the user for a password. A password is accepted only if it begins with "USF" and has at least 8 characters. Print "Access Granted" or "Access Denied".
+Phone Number Inspector
+Ask for a U.S. phone number without spaces or hyphens. It must contain only digits, begin with "1", and contain 11 digits. Print whether the number is valid. This extends the phone-number validation example in the PPT.
+Baka! Baka! Baka!
+Ask the user how many times they want "Baka!" printed. Use a for loop to print it exactly that many times.
+Countdown to Disaster
+Ask the user for a positive integer. Use a while loop to count backward from that number to 1, then print "BOOM!"
+Multiplication Table Challenge
+Ask the user for a number. Print its multiplication table from ×1 through ×10.
+Seven Is Weird
+Print the 7-times table from 7×1 through 7×20, but print only results that are even. Use continue, following the same idea as the multiplication-table exercise in the slides.
+No 2s, No 3s!
+Print the numbers from 1 through 100 that are not divisible by either 2 or 3. Use continue. This directly reinforces the corresponding PPT exercise.
+Zombie Infection Counter
+On Day 1 there is 1 zombie. Every day, the zombie population doubles. Use a while loop to determine the first day on which there are more than 1,000 zombies.
+The $1,000 Shopping Spree
+Start with $1,000. Ask the user repeatedly to enter the price of an item. Subtract each price from the available money. Stop when the money reaches zero or becomes negative. Print how many items were purchased.
+Eat Until You're Full
+Start with calories = 0. Repeatedly ask the user to enter the calories of a food item. Stop when the total reaches or exceeds 2,000 calories. Print the final total.
+The Impossible Equation
+Use a while loop to find the positive integer x satisfying:
+
+7*x/3 = 70
+
+Start with x = 1 and increase it until the equation is satisfied. Do not solve the equation algebraically first. This follows the PPT's 3*x/2 = 63 exercise.
+
+The Sum That Wouldn't Stop
+Add 1 + 2 + 3 + ... using while True. Use break when the sum becomes greater than 1,000. Print the number that caused the total to exceed 1,000 and the final sum. This follows the while True/break structure in the slides.
+Superhero Team
+Create this list:
+
+["Batman", "Superman", "Wonder Woman", "Aquaman", "Flash"]
+
+Print the first hero, last hero, middle hero, and the last two heroes using indexing/slicing.
+
+Fire Aquaman!
+Starting with the superhero list from Problem 21, remove "Aquaman", add "Godzilla", and print the new team. Then print how many members the team now has.
+Worst Avengers Team Ever
+Start with:
+
+team = ["Thor", "Hulk", "Batman", "Shrek", "Iron Man"]
+
+Replace "Batman" and "Shrek" using list indexing so that the list contains only Marvel characters of your choice.
+
+Movie Ranking Disaster
+Create a list containing five movie titles. Ask the user for a new movie and append it to the list. Sort the list alphabetically, reverse it, and print the final list. The PPT introduces append(), sort(), and reverse().
+Who's Missing?
+Given:
+
+characters = ["Godzilla", "Kong", "Mothra", "Godzilla", "Rodan", "Godzilla"]
+
+Determine how many times "Godzilla" appears. Then determine the index of the first "Mothra".
+
+Secret Message Decoder
+Ask the user for a sentence. Print every other character using string slicing. For example:
+
+ABCDEFGHIJ
+
+should produce:
+
+ACEGI
+
+Vowel Hunter
+Ask the user for a word. Use a loop to examine each character and count how many times "a" appears. Do not use .count().
+The Letter Police
+Ask the user to enter something. Determine whether the input contains only letters, only numbers, or neither. Use the string Boolean methods introduced in the PPT such as isalpha() and isdigit().
+Find Godzilla
+Ask the user for a sentence. Determine whether "Godzilla" appears anywhere in it. If found, print its starting index. Otherwise print "Godzilla escaped!" Use either in or .find() correctly; the PPT emphasizes that .find() returns -1 when no match is found.
+FINAL BOSS — Monster Battle Simulator
+Ask the user for Godzilla's strength and Kong's strength. Create a function:
+
+battle(godzilla, kong)
+
+The function repeatedly subtracts the weaker monster's strength from the stronger monster's strength until one monster's strength becomes zero or negative. Return the winner's name and remaining strength. main() should print something such as:
+
+Godzilla wins!
+Remaining strength: 37
+
+Students must use a UDF, arguments, return values, if/else, and a loop in one program.
