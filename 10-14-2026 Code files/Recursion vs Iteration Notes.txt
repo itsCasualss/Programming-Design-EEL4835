@@ -1,0 +1,27 @@
+Time Complexity := O(2^n)
+
+Space Complexity := O(2^n*n) for storing all subsets
+
+Recursion vs Iteration:
+
+    Recursion:
+        Elegant and Closer to Mathematical Definitions
+        May use more memory due to call stack
+        
+    Iteration:
+        Often more efficitent
+        Harder to understand
+
+
+Common Pitfalls to Recursion and Iterations:
+    -Missing a base case will cause an infinite recursion
+    -Too many recursive calls yields a stack overflow
+    -Inefficient Solutions
+    
+   def fib(n)
+       if n <= 1: 
+           return n
+       return fib(n-1) + fib(n-2)
+   
+The fib(n) function works, but it recalculates the same value many times. 
+for Example, fib(5) computes fib(3) twice, fib(2) three times, etc.
