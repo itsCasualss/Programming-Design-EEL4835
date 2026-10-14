@@ -1,0 +1,164 @@
+Copy and Pasted Directly from the posted .docx file
+==================================================
+
+
+Python Exam Preparation
+20 Scenario-Based Programming Questions
+Based on the file-handling and Python classes sections of Introduction to AI. Basic to lower-intermediate practice. Write working Python programs for each scenario.
+Part I — File Handling (10 Questions)
+F1. The Tournament Registration Office
+The World Martial Arts Tournament is accepting registrations. The organizer wants to maintain a list of competitors.
+1.	Ask the user to enter the names of five competitors.
+2.	Save the names in Tournament.txt, one name per line.
+3.	Open the file again and display all five names.
+F2. Capsule Corporation Inventory
+Bulma maintains Inventory.txt containing the following information:
+Capsule  15
+Radar    8
+Sensor   20
+Battery  12
+Read the file and display each item’s name and quantity. Calculate and display the total number of items. Assume each line contains an item name and integer quantity separated by whitespace.
+F3. Frieza’s Power-Level Scanner
+Frieza’s army uses a scanner to record fighter power levels. Power.txt contains:
+1200
+3500
+800
+9200
+4500
+4.	Determine the highest power level.
+5.	Determine the lowest power level.
+6.	Calculate the average power level.
+7.	Display all three results.
+F4. The Missing Student Records
+A professor maintains Attendance.txt:
+Goku Present
+Vegeta Absent
+Gohan Present
+Krillin Absent
+Piccolo Present
+Read the file and create Absent.txt containing only the names of absent students. Display the total number of absent students.
+F5. Spacecraft Temperature Monitoring
+A spacecraft records temperature measurements in Temperature.txt:
+35
+42
+55
+48
+62
+39
+The cooling system must be inspected whenever the temperature exceeds 50°C. Read the file and create Warning.txt containing only temperatures exceeding 50°C. Display the total number of warnings.
+F6. The Tournament Scoreboard
+A tournament organizer maintains Scores.txt:
+Goku 85
+Vegeta 92
+Gohan 78
+Piccolo 88
+Krillin 65
+8.	Read all competitors’ names and scores.
+9.	Determine the competitor with the highest score.
+10.	Calculate the average score.
+11.	Write the winner’s name and score into Winner.txt.
+F7. The Secret Message
+A secret message is stored in Message.txt:
+The Dragon Balls are hidden on Earth
+Bulma wants to reverse the order of the words. Read the message and write the reversed word sequence to Secret.txt. Expected contents:
+Earth on hidden are Balls Dragon The
+F8. The Power Consumption Report
+An electrical engineer records daily power consumption in PowerUsage.txt:
+Monday 120
+Tuesday 150
+Wednesday 180
+Thursday 130
+Friday 200
+12.	Read the power consumption data.
+13.	Calculate the total consumption.
+14.	Determine which day had the highest consumption.
+15.	Create Report.txt containing the total consumption and the highest-consumption day.
+F9. The Student Grade Report
+A professor maintains student exam scores in Exam.txt:
+Goku 95
+Vegeta 82
+Gohan 76
+Krillin 61
+Piccolo 88
+The passing score is 70. Read the scores and create Pass.txt (names and scores of students who passed) and Fail.txt (names and scores of students who failed). Display the number of students in each group.
+F10. The Monster Research Database
+A scientist maintains two files. Each power level corresponds to the monster on the same line.
+Monster.txt:       Power.txt:
+Godzilla           100
+Mothra              75
+Rodan               80
+Gamera              90
+Read both files and create MonsterReport.txt containing each monster and its corresponding power level on one line. Identify and display the most powerful monster.
+
+ Part II — Classes and Objects (10 Questions)
+C1. Capsule Corporation Vehicle Registration
+Capsule Corporation manufactures different vehicles and needs to maintain their specifications.
+16.	Create a Vehicle class accepting a vehicle’s name and maximum speed when an object is created.
+17.	Store both values as attributes.
+18.	Include display() to display the vehicle’s information.
+19.	Create two vehicle objects and display their information.
+C2. The Saiyan Training Simulator
+Goku and Vegeta use a simulator to increase their power levels.
+20.	Create a Saiyan class with name and power attributes.
+21.	Define train() to increase power by 100 and display() to show the fighter’s name and power.
+22.	Create Goku with power 500 and Vegeta with power 600.
+23.	Have Goku train three times and Vegeta twice; display their final powers.
+C3. The Bank Account System
+A bank needs a simple program to manage customer accounts.
+24.	Create BankAccount accepting a customer name and initial balance.
+25.	Define deposit(amount) to add money.
+26.	Define withdraw(amount) to subtract money only if sufficient funds exist.
+27.	Include a method to display the current balance.
+28.	Start with $500, deposit $200, withdraw $150, and display the final balance.
+C4. Robot Navigation System
+An engineering team is developing a robot that moves across a two-dimensional surface. Create Robot with initial coordinates (0, 0).
+29.	Define move_right(distance) to increase x and move_left(distance) to decrease x.
+30.	Define move_up(distance) to increase y and move_down(distance) to decrease y.
+31.	Move right 10, up 5, left 3, and down 2 units, in that order.
+32.	Display the final coordinates.
+C5. The Monster Health System
+A video game developer wants to simulate monster battles.
+33.	Create Monster with name and health attributes.
+34.	Define take_damage(amount) to reduce health and heal(amount) to increase health.
+35.	Define display() to show name and remaining health. Health must never become negative.
+36.	Start with 100 health; apply 30 damage, restore 10, then apply 50 damage. Display the remaining health.
+C6. The Electricity Billing System
+An electric utility company wants to calculate customer bills. Create ElectricBill with customer and usage attributes. The first 100 kWh cost $0.10/kWh; consumption above 100 kWh costs $0.15/kWh.
+37.	Define calculate_bill() to return the cost of electricity.
+38.	Define display() to show customer, usage, and bill.
+39.	Create two customers with usage values of 80 kWh and 150 kWh; display their bills.
+C7. The Rocket Launch Simulator
+A space agency wants to track rocket altitude.
+40.	Create Rocket with name and altitude attributes, starting at altitude 0.
+41.	Define launch() to increase altitude by 100 meters and descend() to decrease it by 50 meters.
+42.	Altitude must not become negative.
+43.	Create Falcon, launch three times, descend once, and display the final altitude.
+C8. The Student Academic Record
+A university wants to maintain student academic records.
+44.	Create Student accepting name and three exam scores.
+45.	Define average() to return the mean score.
+46.	Define result() to return Pass if the average is at least 70 and Fail otherwise.
+47.	Create the students below and display each average and result.
+Student	Exam 1	Exam 2	Exam 3
+Goku	85	90	95
+Vegeta	60	75	65
+C9. The Vehicle Family
+An automobile manufacturer produces gasoline and electric vehicles.
+48.	Create a parent Vehicle class with brand and speed attributes and a display() method.
+49.	Create GasCar with an additional fuel_capacity attribute.
+50.	Create ElectricCar with an additional battery_capacity attribute.
+51.	Each child class must have a method to display its additional attribute.
+52.	Create one object from each child class and display all vehicle information.
+C10. The Battle Between Monsters
+A game developer wants to simulate a battle. Create Monster with name, power, and health attributes. Define attack(opponent) to reduce the opponent’s health by the attacker’s power, and display() to show current health. Health cannot fall below zero.
+53.	Create Godzilla (power 30, health 100) and King Ghidorah (power 25, health 120).
+54.	Godzilla attacks King Ghidorah.
+55.	King Ghidorah attacks Godzilla.
+56.	Godzilla attacks King Ghidorah again.
+57.	Display both monsters’ remaining health.
+Recommended Difficulty Distribution
+Level	File questions	Class questions
+Basic	F1–F3	C1–C3
+Basic–Intermediate	F4–F7	C4–C7
+Intermediate	F8–F10	C8–C10
+Instructor note: Students should determine appropriate file modes and Python implementation details from the scenarios rather than being told which commands to use.
